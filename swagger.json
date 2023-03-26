@@ -1,0 +1,37 @@
+{
+   "swagger": "2.0",
+   "info": {
+     "version": "1.0.0",
+     "title": "CRUD App",
+     "description": "My CRUD App",
+     "license": {
+       "name": "",
+       "url": "http://localhost:3000"
+     }
+   },
+   "host": "http://localhost:3000",
+   "basePath": "/",
+   "tags": [
+     {
+       "name": "Users",
+       "description": "Users API"
+     }
+   ],
+   "paths":{
+     "/store": {
+      "get" : {
+         "tags": ["Users"],
+         "summary": "Get all users in the system",
+         "responses": {
+            "200": {
+               "description": "Ok"
+            }
+         }
+      }
+     }
+   },
+   "schemes": ["http"],
+   "consumes": ["application/json"],
+   "produces": ["application/json"]
+ }
+ 
